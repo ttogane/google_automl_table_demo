@@ -41,7 +41,11 @@ google_automl_table_demo
     ├── 03_create_dataset_is_done.png
     ├── 04_training_settings.png
     ├── 05_model_evaluation.png
-    └── 06_feature_importance.png
+    ├── 06_confusion_matrix.png
+    ├── 06_feature_importance.png
+    ├── 07_deploy_model.png
+    ├── 08_online_testing.png
+    └── 09_result.png
 ```
 今回使うデータセットは`dataset/bank-marketing_csv.csv`で、これはオープンソースの[Bank Marketing](https://datahub.io/machine-learning/bank-marketing)で、
 列はわかりやすいように改定した。
