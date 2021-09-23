@@ -145,7 +145,7 @@ recall(再現率) = (真陽性) / (真陽性 + 偽陰性)
 </br>
 
 予測の結果:  
-<img width=300 height=200 alt="08_online_testing" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/08_online_testing.png"/>
+<img width=300 height=200 alt="09_result" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/09_result.png"/>
 </br>
 
 
