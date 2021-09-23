@@ -73,12 +73,12 @@ google_automl_table_demo
 
 ### STEP 1: データセットを作成する
 「新しいデータセット」からデータセット作成画面へ  
-<img width=600 height=300 alt="01_create_new_dataset" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/01_create_new_dataset.png"/>  
+<img width=600 height=300 alt="01_create_new_dataset" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/01_create_new_dataset.png"/>  
 </br>
 
 ### STEP 2: データセットのインポート
 1, 「パソコンからファイルをアップロード」を選択し、「アップロード先のフォルダを選択」で既存のバケットを選択するか新規で任意のバケットを作り選択する。  
-<img width=600 height=300 alt="02_import_dataset_csv_from_pc" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/02_import_dataset_csv_from_pc.png"/>
+<img width=600 height=300 alt="02_import_dataset_csv_from_pc" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/02_import_dataset_csv_from_pc.png"/>
 </br>
 
 2, 選択が完了したら「インポート」を実行する。  
@@ -86,16 +86,16 @@ google_automl_table_demo
 
 ### STEP 3: トレーニングを開始する
 1, ターゲット列に`is_deposit`を選択し、「モデルトレーニング」を実行する。    
-<img width=600 height=300 alt="03_create_dataset_is_done" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/03_create_dataset_is_done.png"/>
+<img width=600 height=300 alt="03_create_dataset_is_done" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/03_create_dataset_is_done.png"/>
 </br>
 
 2, 設定項目が出てくるので、各種設定を行い「モデルトレーニング」を実行する。
-<img width=600 height=300 alt="04_training_settings" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/04_training_settings.png"/>
+<img width=600 height=300 alt="04_training_settings" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/04_training_settings.png"/>
 </br>
 
 ### STEP 4: モデルの評価
 このモデルでは、1 は悪い結果（この銀行に預金が行われないこと）を表し、2 は良い結果（この銀行に預金が行われること）を表します。  
-<img width=600 height=300 alt="05_model_evaluation" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/05_model_evaluation.png"/>
+<img width=600 height=300 alt="05_model_evaluation" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/05_model_evaluation.png"/>
 </br>
 
 **用語の意味**
@@ -120,28 +120,28 @@ recall(再現率) = (真陽性) / (真陽性 + 偽陰性)
 また、混同行列と特徴量の重要度を見ることもできる。  
 
 混同行列:  
-<img width=500 height=250 alt="06_confusion_matrix" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/06_confusion_matrix.png"/>
+<img width=500 height=250 alt="06_confusion_matrix" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/06_confusion_matrix.png"/>
 </br>
 各行が正解ラベルで、それに対する各列が推定したラベルとなっています。  
 今回の場合、「２」と推測したが実際には「１」だった割合が多くなってることがわかります。
 
 特徴量の重要度:  
-<img width=400 height=400 alt="06_feature_importance" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/06_feature_importance.png"/>
+<img width=400 height=400 alt="06_feature_importance" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/06_feature_importance.png"/>
 </br>
 また、`duration`が最も重要なパラメータだったことがわかります。  
 なお、この値はexportもできる。=> `out/feature_importance.csv`
 
 ### STEP 5: モデルのデプロイ&テスト
 1, 「オンライン予測」から「モデルをデプロイ」する  
-<img width=600 height=300 alt="07_deploy_model" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/07_deploy_model.png"/>
+<img width=600 height=300 alt="07_deploy_model" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/07_deploy_model.png"/>
 </br>
 
 2, 「予測」を実行する  
-<img width=600 height=300 alt="08_online_testing" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/08_online_testing.png"/>
+<img width=600 height=300 alt="08_online_testing" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/08_online_testing.png"/>
 </br>
 
 予測の結果:  
-<img width=300 height=200 alt="08_online_testing" src="https://github.com/ttogane/google-automl-demo/blob/main/screen_shots/08_online_testing.png"/>
+<img width=300 height=200 alt="08_online_testing" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/08_online_testing.png"/>
 </br>
 
 
