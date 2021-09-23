@@ -127,7 +127,7 @@ recall(再現率) = (真陽性) / (真陽性 + 偽陰性)
 <img width=500 height=250 alt="06_confusion_matrix" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/06_confusion_matrix.png"/>
 </br>
 各行が正解ラベルで、それに対する各列が推定したラベルとなっています。  
-今回の場合、「２」と推測したが実際には「１」だった割合が多くなってることがわかります。
+今回の場合、「1」と推測したが実際には「2」だった割合が多くなってることがわかります。
 
 特徴量の重要度:  
 <img width=400 height=400 alt="06_feature_importance" src="https://github.com/ttogane/google_automl_table_demo/blob/main/screen_shots/06_feature_importance.png"/>
